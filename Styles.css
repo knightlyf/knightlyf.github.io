@@ -1,0 +1,525 @@
+body {
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
+            background-color: #222222; 
+            background-image: url(imgs/background.jpg);
+            
+            background-size: cover; /* Fit the image while maintaining aspect ratio */
+            background-position: fill; /* Center the image within the background area */
+            background-repeat:repeat; /* Do not repeat the image */
+            margin: 50px;
+            margin-top: 20px;
+        }
+
+        .tile-container {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            overflow: hidden;
+            margin: 10px;
+            margin-top: 20px;
+            perspective: 800px;
+        }
+        
+        .tile-container-large {
+            position: relative;
+            width: 300px;
+            height: 140px;
+            overflow: hidden;
+            margin: 10px;
+            margin-top: 20px;
+            perspective: 800px;
+            cursor: pointer;
+        }
+
+        .tile-container-double-wide {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            margin: 10px;
+            margin-top: 20px;
+            perspective: 800px;
+        }
+
+
+        .tile {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #0078D4; /* White background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFF;
+            transition: transform 1s ease;
+            transform-style: preserve-3d; /* Preserve 3D transformation for children */
+            
+        }
+
+        .tile.front {
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .tile.back {
+            z-index: 0;
+            transform: translateY(100%);
+            padding-left: 10px;
+            padding-bottom: 25px;
+            align-items: flex-end; 
+            justify-content: flex-start;
+            cursor: pointer;
+        }
+        .tile.modal{
+            z-index: 0;
+            transform: translateY(100%);
+            padding-left: 10px;
+            padding-bottom: 25px;
+            align-items: flex-end; 
+            justify-content: flex-start;
+            cursor: pointer;
+        }
+        
+        .tile-container:hover .tile.front {
+            transform: translateY(-100%);
+        }
+
+        .tile-container:hover .tile.back {
+            transform: translateY(0%);
+        }
+        
+
+        .tile-container-large:hover .tile.front {
+            transform: translateY(-100%);
+        } 
+
+        .tile-container-large:hover .tile.back {
+            transform: translateY(0%);
+            backface-visibility: hidden;
+        } 
+        .tile-container-large:hover .tile.modal {
+            transform: translateY(0%);
+            backface-visibility: hidden;
+        } 
+        .tile-container-double-wide:hover .tile.front {
+            transform: translateY(-10%);
+        }
+
+        .tile-container-double-wide:hover .tile.back {
+            transform: translateY(0%);
+        }
+
+        .tile.flipped {
+            transform: rotateY(180deg);
+        }
+
+        h1,h2,h4,h5{
+            color: white;
+            padding: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .hidden-div {
+            display: none;
+            position: relative;
+            width: 140px;
+            height: 140px;;
+            background-color: #FFF; /* White background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFF;
+            transition: opacity 0.5s ease;
+            flex-direction: column; 
+            align-items: center; 
+            flex-wrap: wrap;
+        }
+        
+        p{
+            color: black;
+            padding: 0px;
+        }
+
+        .expanded-content {
+            display: none;
+            padding: 20px;
+        }
+
+        .tile.expanded .expanded-content {
+            display: block;
+            z-index: 2;
+            position: absolute;
+        }
+        .container {
+            width: 400px;
+            height: auto;
+            overflow: hidden; /* Hide overflowing content */
+            background-color: #222222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFF;
+            border-color: forestgreen;
+            /* border: 2px solid forestgreen ; */
+            margin: 20px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: relative;
+            
+
+        }
+        .container1 {
+            width: 400px;
+            height: auto;
+            overflow: hidden; /* Hide overflowing content */
+            background-color: #222222;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #FFF;
+            border-color: forestgreen;
+            /* border: 2px solid forestgreen ; */
+            
+            flex-direction: column;
+            flex-wrap: wrap;
+            top:0;
+            right: 0;
+            position: relative;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            
+        }
+        .inner-container {
+            
+            display: flex;
+            padding: 5px;
+        }
+
+        .scroll-content {
+            width: 300px; 
+            height: 960px; 
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Enable vertical scroll */
+        .container.vertical-scroll {
+            overflow-y: auto;
+            
+        }
+        .container.vertical-scroll::-webkit-scrollbar {
+            display: none; 
+        }
+        
+        .image {
+            margin-left: 10px;
+            flex: 0 0 auto; /* The image won't grow or shrink */
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin-right: 10px; /* Add some spacing between image and paragraph */
+            background-size: cover;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            flex: 1; /* The paragraph will take the remaining space */
+            padding: 10px;
+            font-size: 19px;
+            
+        }
+        /* Expanded state */
+        .expanded {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: #FFF;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999; /* Above everything */
+            animation:  flipAnimation 1s;
+            margin: 0px;
+            padding-left: 0px;
+            padding-bottom: 0px;
+        }
+        .expanded.animation-removed {
+            animation: closeExpandAnimation 1s, AntiflipAnimation 1s;
+        }
+        .hidden-div.expanded {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0078D4;
+            color: #FFF;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: expandAnimation 1s, flipAnimation 1s;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            display: none; /* Hidden initially */
+            justify-content: center;
+            align-items: center;
+            z-index: 9998; /* Above the tile but below the expanded tile */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .expanded .overlay {
+            display: flex; /* Show the overlay when the tile is expanded */
+        }
+        .expanded.flipped .expanded-content {
+            display: block;
+        }
+        @keyframes expandAnimation {
+            from {
+                transform: scale(0);
+            }
+            to {
+                transform: scale(1);
+                
+            }
+        }
+        @keyframes flipAnimation {
+            0% {
+                transform: rotateY(0);
+                transform: scale(0);
+            }
+            50% {
+                transform: rotateY(90deg);
+            }
+            100% {
+                transform: rotateY(180deg);
+                transform: scale(0.5);
+            }
+            150% {
+                transform: rotateY(270deg);
+            }
+            200% {
+                transform: rotateY(360deg);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes closeExpandAnimation {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes AntiflipAnimation {
+            0% {
+                transform: rotateY(360deg);
+                transform: scale(1);
+            }
+            50% {
+                transform: rotateY(270deg);
+            }
+            100% {
+                transform: rotateY(180deg);
+                transform: scale(0.5);
+            }
+            150% {
+                transform: rotateY(90deg);
+            }
+            200% {
+                transform: rotateY(0deg);
+                transform: scale(0);
+            }
+        }
+        .closing-flip {
+            animation: AntiflipAnimation 1s;
+        }
+        
+        .closing-expand {
+            animation: closeExpandAnimation 1s;
+        }
+        
+        .tile-container-large.flipped .front {
+            transform: rotateY(180deg);
+            display: none;
+        }
+
+        .tile-container-large.flipped .back {
+            display: block;
+        }
+        /* Modal styles */
+        .modal-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .modal-content {
+            width: 300px;
+            height: 200px;
+            background-color: #FFF;
+            color: #000;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .chat-overlay {
+            /* your styles for chat overlay */
+            position: fixed;
+            top: 90%;
+            right: 0;
+            transform: translateY(-50%);
+            z-index: 99999;
+            pointer-events: none;
+            width: 600px;
+        }
+        
+        .message {
+            /* your styles for message */
+            display: flex; /* Add flex display to align image and text */
+            align-items: center; /* Vertically align the content */
+            margin: 20px;
+            padding: 18px;
+            background-color: #0078D4;
+            color: #FFF;
+            opacity: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            transform: translateX(100%);
+            transition: opacity 0.75s ease-in-out, transform 0.2s ease-in-out;
+            font-size: 20px;
+        }
+        
+        /* Only apply animations to the message when it's shown */
+        .message.show {
+            opacity: 1;
+            transform: translateX(0);
+            animation: slideIn 0.5s ease-in-out;
+        }
+        .message.destroy{
+            transform: translate(200%);
+            opacity: 0;
+            animation: fadeOut 0.75s ease-in-out;
+        }
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideOutFromRight {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        .slide-in {
+            animation: slideInFromRight 0.1s ease-in-out;
+        }
+        .slide-out{
+            animation: slideOutFromRight 0.1s ease-in-out;
+        }
+        
+        
+          @keyframes slideIn {
+            0% {
+              transform: translateY(100%);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+        
+          @keyframes fadeOut {
+            0% {
+              opacity: 1;
+            }
+            100% {
+              opacity: 0;
+              height: 0;
+              padding: 0;
+            }
+        }
+
+        .expand-button,.back-button{
+            /*display: none;*/
+            position: fixed; 
+            top:30px;
+            right: 30px;
+            border-radius: 40px;
+            border:3px solid white;
+            width: 60px;
+            height: 60px;
+            background-color: #323233;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 70%) {
+            .container {
+                display: none; /* Hide the container when width is reduced */
+            }
+        
+            .expand-button {
+                display: block; /* Display the expand button */
+            }
+        }
+
+        .fullscreen-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #222222;
+            z-index: 9999;
+            flex-direction: column;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        .hide-slide-out {
+            width:0;
+            overflow: hidden;
+            transition: width 0.75s ease-out;
+            transform: translateX(-100%);
+        }
+        
+
+          
+    
