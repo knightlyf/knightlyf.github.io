@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Varun Vinod - Porfolio Website</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+<div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
+    <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 0;margin-bottom: 0;opacity: 70%;">Me</h2>
+    <div class="tile-container-double-wide">
+        <div class="tile front">
+            <img src="imgs/profile.jpg" style="height: 100%;width: 100%;"></div>
+        <div class="tile back" >Varun Vinod</div>
+    </div>
+    <div class="tile-container-double-wide">
+        <div class="tile front" style="flex-direction: column;align-items:start;justify-content: center;">
+            
+            <p style="color :rgb(211, 211, 211);padding: 15px;padding-bottom: 0px; font-size: 20px;font-weight: bold;">Governance, Risk Management and Compliance Intern @ Hexaware</p>  
+            <p style="color :rgb(211, 211, 211);padding: 15px; padding-top: 0px; font-size: 20px;">Pursuing Information Technology Management @ University of Texas at Dallas</p>
+        </div>
+        <div class="tile back">About Me</div>
+    </div>
+</div>
+
+<div style="flex-direction: column; align-items: center; flex-wrap: wrap;">
+    <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 0;margin-bottom: 0;opacity: 70%;">Career</h2>
+  <div class="tile-container">
+        <div class="tile front" onclick="toggleHiddenDiv(1); toggleHiddenDiv(2)">
+            <img src="imgs/work.png" style="height: 48px;width: 48px; align-items: center;">
+        </div>
+    <div class="tile back" onclick="toggleHiddenDiv(1); toggleHiddenDiv(2)">Experience</div>
+</div>
+<div class="hidden-div tile-container" id="hiddenDiv1" onclick="expandTile(this)">
+    
+    <div class=" tile front" style="background-color: #FFF;"><img src="imgs/Hexaware.png" style="height: 64px;width: 64px; align-items: center;"></div>
+    <div class=" tile back" style="background-color: #FFF;color: black;">
+        <div style="display: flex;flex-direction: column; max-width: 500px;" class="hide-on-small-screen">
+            <img src="imgs/backB.png" style="position: fixed;top: 50px;left:50px;" >
+            <img src="imgs/Hexaware.png" style="width:50%;height: 50%; padding: 55px;">
+            <h1 style="color: #1f70c1;">Hexaware Technologies</h1>
+        </div>
+            <div class="container vertical-scroll" style="height: 100%;width: auto;margin: 0%;padding: 25px;">
+                <h2 style="margin-bottom: 0px;">Governance, Risk Management and Compliance Intern</h2>
+                <h4 style="color: gray; margin-top: 0px;margin-bottom: 0px;">Role: .NET Developer</h4>
+                <h5 style="color: gray; margin-top: 0px;margin-bottom: 0px;">(Navi Mumbai - Maharashtra,India)</h5>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/work.png');background-color: #1f70c1; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        
+                        <p style="font-weight: bold;color: #FFF;">Responsibilties:</p>
+                        <ul>
+                        <li style="color: gray;">Designed and implemented GUI for an audit BOT with multiple data sources using Dot NET Core, working closely with the AVP of GRC</li>
+                        <li style="color: gray;">Ensured the BOT's operation 24x7, continuously processing input data streams for auditing purpose.</li>
+                        <li style="color: gray;">Created a live dashboard displaying real-time compliance reports based on the gathered data.</li>
+                        <li style="color: gray;">Collaborated with a database team to integrate the BOT with the database, enabling seamless data storage and retrieval.</li>
+                        <li style="color: gray;">Tested and debugged the BOT, ensuring accuracy and reliability in generating compliance reports.</li>
+                        <li style="color: gray;">Implemented security measures to safeguard sensitive data and ensure compliance with privacy regulations.</li>
+                        <li style="color: gray;">Monitored the BOT's performance and efficiency, making necessary improvements for optimization.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Projects</h3>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #1f70c1;; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Seattle AuitTool Project</p>
+                        <p style="color: gray;">May 2022 - Aug 2022</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container vertical-scroll" style="height: 100%;width: auto;margin: 0%;padding: 25px;flex-wrap: wrap;">
+                <h2>Skills Acquired:</h2>
+                <div class="inner-container" style="flex-wrap: wrap;">
+                    <img class="image" src="imgs/js.png" style="height: 50px;width:50px;padding: 5px;background-color: #f7df1e;">
+                    <img class="image" src="imgs/html.jpg" style="height: 50px;width:50px;padding: 5px;background-color:#f78642;">
+                    <img class="image" src="imgs/xl.png" style="height: 50px;width:50px;padding: 5px;background-color: #1e7145;">
+                    <img class="image" src="imgs/net.jpg" style="height: 50px;width:50px;padding: 5px;background-color: #672c7c;">
+                    <img class="image" src="imgs/mssql.jpg" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/vs.png" style="height: 50px;width:50px;padding: 5px;background-color: #672c7c;">
+                    
+                
+                </div>
+            </div>
+        <!-- </div>   -->
+          
+   
+    </div>
+</div>
+
+<div class="hidden-div tile-container" id="hiddenDiv2" onclick="expandTile(this)">
+    
+    <div class=" tile front" style="background-color: #FFF;"><img src="imgs/IBM.png" style="height: 32px;width: 64px; align-items: center;"></div>
+    <div class=" tile back" style="background-color: #FFF;color: black;">
+        <div style="display: flex;flex-direction: column; max-width: 500px;" class="hide-on-small-screen">
+            <img src="imgs/backB.png" style="position: fixed;top: 50px;left:50px;" >
+            <img src="imgs/IBM.png" style="width:50%;height: 30%; padding: 55px;">
+            <h1 style="color: #1f70c1;">International Business Machines (IBM)</h1>
+        </div>
+            <div class="container vertical-scroll" style="height: 100%;width:auto;margin: 0%;padding: 25px;">
+                <h2 style="margin-bottom: 5px;">Associate Systems Engineer</h2>
+                <h4 style="color: gray; margin-top: 0px;margin-bottom: 0px;">Role: Java Full Stack Developer</h4>
+                <h5 style="color: gray; margin-top: 0px;margin-bottom: 0px;">(Bengaluru - Karnataka,India)</h5>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/work.png');background-color: #1f70c1; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        
+                        <h3 style="font-weight: bold;color: #FFF;">Responsibilties:</h3>
+                        <ul>
+                        <li style="color: gray;">Reduced deployment time for critical applications by 50% by optimizing the workflow of CI/CD pipeline using Jenkins.</li>
+                        <li style="color: gray;">Assigned responsibility of administrating critical applications within 2 months of joining and successfully managed them.</li>
+                        <li style="color: gray;">Integrated new design thinking ideas and effective problem resolution techniques to optimize application performance.</li>
+                        <li style="color: gray;">Minimized downtime by integrating Java Spring Applications with Eureka Server and microservices APIs.</li>
+                        <li style="color: gray;">Achieved top 1% learner’s status worldwide and earned 4 learner badges in less than 2 months of joining.</li>
+                        <li style="color: gray;">Developed and maintained software applications using agile methodology and ensured their scalability and reliability</li>
+                        <li style="color: gray;">Collaborated with cross-functional teams to ensure seamless integration of software applications.</li>
+                        <li style="color: gray;">Conducted code reviews and implemented best practices to ensure high-quality code and adherence to industry standards</li>
+                        <li style="color: gray;">Proactively identified and resolved technical issues to ensure optimal performance of software applications.</li>
+                        <li style="color: gray;">Actively involved in the entire software development life cycle (Planning, Designing, Implementation and Maintenance)</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Projects</h3>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #1f70c1;; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Lumen Project</p>
+                        <p style="color: gray;">May 2022 - Aug 2022</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container vertical-scroll" style="height: 100%;width: auto;margin: 0%;padding: 25px;flex-wrap: wrap;">
+                <h2>Skills Acquired:</h2>
+                <div class="inner-container" style="flex-wrap: wrap;">
+                    <img class="image" src="imgs/js.png" style="height: 50px;width:50px;padding: 5px;background-color: #f7df1e;">
+                    <img class="image" src="imgs/html.jpg" style="height: 50px;width:50px;padding: 5px;background-color:#f78642;">
+                    <img class="image" src="imgs/java.jpg" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/linux.png" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/redhat.jpg" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/splunk.png" style="height: 50px;width:50px;padding: 5px;background-color:#64a637">
+                    <img class="image" src="imgs/jenkins.png" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/spring.png" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/xl.png" style="height: 50px;width:50px;padding: 5px;background-color: #1e7145;">
+                    <img class="image" src="imgs/git.jpg" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/oracle.png" style="height: 50px;width:50px;padding: 5px;">
+                
+                </div>
+            </div>
+        <!-- </div>   -->
+          
+    </div>  
+    <!-- </div> -->
+</div>
+
+</div>
+
+<div style="flex-direction: column; align-items: center; flex-wrap: wrap;">
+    <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 38px;"></h2>
+  <div class="tile-container">
+      <div class="tile front" onclick="toggleHiddenDiv(3); toggleHiddenDiv(4)"><img src="imgs/Education.png" style="height: 48px;width: 48px; align-items: center;"></div>
+      <div class="tile back" onclick="toggleHiddenDiv(3); toggleHiddenDiv(4)">Education</div>
+  </div>
+
+
+<div class="hidden-div tile-container" id="hiddenDiv3" onclick="expandTile(this)">
+    
+    <div class=" tile front" style="background-color: #e87602;" ><img src="imgs/UTD.png" style="height: 50px;width:80px; align-items: center;"></div>
+    <div class=" tile back name-back" style="background-color: #e87602;color: rgb(255, 255, 255);" >UTD</div>
+    <div class=" tile back content-back" style="background-color: #e87602;color: rgb(255, 255, 255);" >
+        <div style="display: flex;flex-direction: column;max-width: 500px;" class="hide-on-small-screen">
+            <img src="imgs/back.png" style="position: fixed;top: 50px;left:50px;" id='backbutton2' onclick="closingAnimation('backbutton1','hiddenDiv3')">
+            <img src="imgs/UTD.png" style="width:90%;height: 50%;">
+            <h1>University of Texas at Dallas (Jindal School of Management)</h1>
+        </div>
+        <div class="container vertical-scroll" style="height: 100%;width: 100%;margin: 0%;padding: 25px;">
+            <h2>Degrees</h2>
+            <!-- <div class="container vertical-scroll" style="height: 80%;width: 50%;margin: 0%;padding: 25px;"> -->
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Education.png');background-color: #e87602; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Master of Science - MS, Information Technology Management</p>
+                        <p style="color: gray;">Aug 2022- May 2024</p>
+                        <p style="color: gray;">GPA: 3.6 / 4.0</p>
+                        <p style="color: gray;">Courses: Data Visualization, Programming for Data Science, Data Management, Spreadsheet Modelling, OOP in Python</p>
+                    </div>
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Education.png');background-color: #e87602; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Graduate Certification, Business intelligence and Data Mining</p>
+                        <p style="color: gray;">May 2023-Dec 2023</p>
+                        <p style="color: gray;">GPA: - / 4.0</p>
+                        <p style="color: gray;">Courses: Data Warehousing, Business Analytics with R, Advanced Statistics, Advanced Business Analytics with R</p>
+                    </div>
+                </div>
+                <h2>Scholarships & Awards</h2>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/trphy.png');background-color: #e87602; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Lars Magnus Erricson Fellowship in Management</p>
+                        <p style="color: gray;">July 2023</p>
+                        <p style="color: gray;"> This award is specifically designated for JSOM students who have demonstrated exemplary academic standing along with active participation in extracurricular activities</p>
+                    </div>
+                    
+                </div>
+            
+            <!-- </div> -->
+            
+            
+        </div>
+        <div class="container vertical-scroll" style="height: 100%;width: auto;margin: 0%;padding: 25px;">
+            <h2>Skills Acquired:</h2>
+            <div class="inner-container" style="flex-wrap: wrap;">
+                <img class="image" src="imgs/python.png" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;">
+                <img class="image" src="imgs/linux.png" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;">
+                <img class="image" src="imgs/mssql.jpg" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;">
+                <img class="image" src="imgs/ml.png" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;">
+                <img class="image" src="imgs/r.png" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;">
+                <img class="image" src="imgs/xl.png" style="height: 50px;width:50px;padding: 5px;margin-top: 15px;background-color: #1e7145;">
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="hidden-div tile-container" id="hiddenDiv4" onclick="expandTile(this)"  >
+    
+    <div class=" tile front" style="background-color: #8b0304;"><img src="imgs/pce.png" style="height:60px;width: 60px; align-items: center;"></div>
+    
+    <div class=" tile back" style="background-color: #8b0304;color: rgb(255, 255, 255);" id="tile-back1" >
+    
+        <div style="display: flex;flex-direction: column;max-width: 500px;"  class="hide-on-small-screen">
+            <img src="imgs/back.png" style="position: fixed;top: 50px;left:50px;" id='backbutton1' onclick="closingAnimation('backbutton1','hiddenDiv4')">
+            <img src="imgs/pce.png" style="width:50%;height: 20%; padding: 55px;">
+            <h1>Pillai College of Engineering (Mumbai University)</h1>
+        </div>
+           
+            <div class="container vertical-scroll" style="height: 100%;width: 50%;margin: 0%;padding: 25px;">
+                <h2>Degrees</h2>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Education.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Bachelor of Engineering - BE, Computer Science</p>
+                        <p style="color: gray;">Aug 2017- Jul 2021</p>
+                        <p style="color: gray;">GPA: 3.38 / 4.0</p>
+                    </div>
+                </div>
+                <h2>Projects</h2>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Image Captioning Chatbot</p>
+                        <p style="color: gray;">Aug 2020 - May 2021</p>
+                    </div>
+                    
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Question Answering System using NLP</p>
+                        <p style="color: gray;">Feb 2020 - Mar 2021</p>
+                    </div>
+                    
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Movie Review Website</p>
+                        <p style="color: gray;">Feb 2019 - May 2019</p>
+                    </div>
+                    
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Simple To-do List using Python</p>
+                        <p style="color: gray;">Feb 2019 - May 2019</p>
+                    </div>
+                    
+                </div>
+                <div class="inner-container">
+                    <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: #8b0304; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                    <div class="content" style="margin-top: 0px;">
+                        <p style="font-weight: bold;color: #FFF;">Booth's Algorithm Simulator</p>
+                        <p style="color: gray;">Jan 2019 - May 2019</p>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="container vertical-scroll" style="height: 100%;width: auto;margin: 0%;padding: 25px;">
+                <h2>Skills Acquired:</h2>
+                <div class="inner-container" style="flex-wrap: wrap;">
+                    <img class="image" src="imgs/python.png" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/html.jpg" style="height: 50px;width:50px;padding: 5px;background-color:#f78642;">
+                    <img class="image" src="imgs/java.jpg" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/linux.png" style="height: 50px;width:50px;padding: 5px;">
+                    <img class="image" src="imgs/kali.jpg" style="height: 50px;width:50px;padding: 5px;">
+                
+                </div>
+            </div>
+            </div>  
+          
+    </div>  
+    <!-- <div class="tile back" style="background-color: #8b0304; color: rgb(255, 255, 255);">PCE</div> -->
+        
+    </div>
+        
+    </div>
+</div>
+<div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
+<h2 style="font-size: 36px;font-weight: 400;padding-bottom: 38px;"></h2>
+  <div class="tile-container" onclick="expandTile(this)">
+    <div class="tile front" style="background-color: rgb(255, 196, 0);"><img src="imgs/Project.png" style="height: 48px;width: 48px; align-items: center;"></div>
+    
+        <div class="tile back" style="background-color: rgb(255, 196, 0);">
+        <div class="container vertical-scroll" style="height: 100%;width: 100%;margin: 0%;padding: 25px;">
+            <h1>Projects</h1>
+            <div class="inner-container">
+                <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                <div class="content" style="margin-top: 0px;">
+                    <p style="font-weight: bold;color: #FFF;">WORDLE </p>
+                    <p style="color: gray;">Feb 2022- Feb 2022</p>
+                    <p style="color: gray;">Description: A simple implementation of the famous internet game - WORDLE using Python with added features like dynamic grid with more letters, word definitions and much more. 
+                        All this optimized to 120 lines of code</p>
+                    <p style="color: gray;">Skills Used: Python (Programming Language) · Algorithms</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                <div class="content" style="margin-top: 0px;">
+                    <p style="font-weight: bold;color: #FFF;">Image Captioning Chatbot </p>
+                    <p style="color: gray;">Sep 2020- Apr 2021</p>
+                    <p style="color: gray;">Description: “Ask Image” is a system which automatically generates natural language descriptions based on the image provided Caption generation is a challenging artificial intelligence problem where a textual description must be generated for a given photograph. It requires both methods from computer vision to understand the content of the image and a language model from the field of natural language processing to turn the understanding of the image into words in the right order. A single end-to-end model can be defined to predict a caption, given a photo, instead of requiring sophisticated data preparation or a pipeline of specifically designed models. Conversational AI use cases are diverse. They include customer support, e-commerce, controlling IoT devices, enterprise, productivity and much more. In very simplistic terms, these use cases involve a user asking a specific question (intent) and the conversational experience (or the chatbot) responding to the question by making calls to a backend system like a CRM, Database or an API. It turns out that some of these use cases can be enriched by allowing a user to upload an image. In such cases, you would want the conversation experience to take an action based on what exactly is in that image. In this project we will develop a photo captioning deep learning model and integrate COCOS dataset, SQuAD dataset to provide rich and dynamic ML based responses to user provided image inputs.</p>
+                    <p style="color: gray;">Skills Used: Machine Learning · Git · Python (Programming Language)</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                <div class="content" style="margin-top: 0px;">
+                    <p style="font-weight: bold;color: #FFF;">Question Answering System using NLP</p>
+                    <p style="color: gray;">Feb 2020 - Mar 2021</p>
+                    <p style="color: gray;">Description: A Question Answering System powered by Natural Language Processing (NLP), leveraging the BERT model and the SQuAD dataset, revolutionizes information retrieval. BERT's contextual understanding enables it to comprehend the nuances of questions and passages. Trained on the SQuAD dataset, which contains question-answer pairs from diverse sources, the system can pinpoint exact answers within text. By considering the context of words and phrases, BERT enhances accuracy. This synergy results in a robust system that interprets questions, comprehends documents, and extracts precise responses. Such technology finds applications in search engines, virtual assistants, and information-driven industries, reshaping the way we interact with information.</p>
+                    <p style="color: gray;">Skills Used: Machine Learning · Git · Python (Programming Language) · Natural Language Processing</p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                <div class="content" style="margin-top: 0px;">
+                    <p style="font-weight: bold;color: #FFF;">Movie Review Website</p>
+                    <p style="color: gray;">Feb 2020 - Mar 2021</p>
+                    <p style="color: gray;">Description: A dynamic movie review website crafted with HTML5, CSS, JavaScript, and MySQL offers an immersive cinematic experience. Users can explore a vast collection of movies, read reviews, and submit their own. HTML5 ensures responsive design for seamless navigation across devices. CSS adds visually appealing layouts and styling, enhancing user engagement. JavaScript enables interactive features like dynamic content loading and user reviews. MySQL database powers efficient data storage and retrieval, ensuring a seamless browsing experience. This fusion of technologies creates a user-friendly platform where movie enthusiasts can discover, discuss, and contribute to the world of film, fostering a vibrant community around their shared passion.</p>
+                    <p style="color: gray;">Skills Used: HTML5 · CSS · Javascript · MySQL </p>
+                </div>
+            </div>
+            <div class="inner-container">
+                <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                <div class="content" style="margin-top: 0px;">
+                    <p style="font-weight: bold;color: #FFF;">Booths Algorithm Simulator</p>
+                    <p style="color: gray;">Jan 2019 - May 2019</p>
+                    <p style="color: gray;">Description: The Booth's Algorithm Simulator showcases my expertise in UWP, VBScript, Visual Studio, and algorithm implementation. Through an intuitive user interface built with UWP, the simulator demonstrates the Booth's multiplication algorithm step by step. VBScript enables dynamic visualization of algorithmic processes, enhancing user understanding. Developed in Visual Studio, the simulator combines algorithmic precision with user-friendly design. By leveraging my skills in algorithm development and software engineering, this project not only educates users about Booth's algorithm but also highlights my ability to create effective and engaging educational tools that bridge complex concepts with accessible user experiences.</p>
+                    <p style="color: gray;">Skills Used: UWP · vbscript · Visual Studio · Algorithms </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!-- <div style="flex-direction: column; align-items: center; flex-wrap: wrap;"> -->
+    <div class="overlay" onclick="closeExpandedTile(this)">    
+    </div>
+    <div style="display: flex;flex-direction: column;">
+    <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 19px;"></h2>
+    <div class="tile-container-large" onclick="expandTile(this)">
+        <div class="tile front" style="background-color: forestgreen;"><img src="imgs/trphy.png" style="height: 48px;width: 48px; align-items: center;"></div>
+        <div class="tile back" style="background-color: forestgreen;display: block;" id="back1" onclick="showModal(back1,modal1)"></div>
+        <div class="tile modal" style="background-color: forestgreen;display: block;" id="modal1">
+            <div class="container vertical-scroll" style="height: 100%;width: 100%;margin: 0%;padding: 25px;;">
+                <h1 style="font-size: 48px;">Awards and Certifications</h1>
+                <div style="display:flex;align-items: flex-start;">
+                    <div class="container vertical-scroll" style="margin-top: 5x;max-width: 50%;">
+                        <h2 style="color: gray;font-size: 24px;padding-left: 0%;">Certifications</h2>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px;">
+                                <p style="font-weight: bold;color: #FFF;">The Complete PL/SQL Bootcamp : "Beginner to Advanced PL/SQL" </p>
+                                <p style="color: gray;">Udemy</p>
+                                <p style="color: gray;">Issued Jul 2022</p>
+                                <p style="color: gray;">Credential ID UC-efe5a0e3-920d-4d4f-9008-d49f0483fefa</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">The Complete SQL Bootcamp : "Beginner to Advanced PL/SQL" </p>
+                                <p style="color: gray;">Udemy</p>
+                                <p style="color: gray;">Issued Jul 2022</p>
+                                <p style="color: gray;">Credential ID UC-c13ea20e-e8ea-4dc9-b6fc-7fc177644958</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">Linux for Beginners </p>
+                                <p style="color: gray;">Udemy</p>
+                                <p style="color: gray;">Issued Jul 2022</p>
+                                <p style="color: gray;">Credential ID UC-ba37a620-ff1e-465a-90a3-40f2fcd3829f</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">Enterprise Design Thinking - Team Essentials for AI </p>
+                                <p style="color: gray;">IBM</p>
+                                <p style="color: gray;">Issued Mar 2022</p>
+                                <p style="color: gray;">Credential ID: - </p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">Enterprise Design Thinking - Co Creator </p>
+                                <p style="color: gray;">IBM</p>
+                                <p style="color: gray;">Issued Mar 2022</p>
+                                <p style="color: gray;">Credential ID: - </p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">Enterprise Design Thinking - Practioner </p>
+                                <p style="color: gray;">IBM</p>
+                                <p style="color: gray;">Issued Mar 2022</p>
+                                <p style="color: gray;">Credential ID: - </p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">PY0101EN: Python Basics for Data Science</p>
+                                <p style="color: gray;">edX</p>
+                                <p style="color: gray;">Issued May 2021</p>
+                                <p style="color: gray;">Credential ID: f4b5eb3cfba0484aba318454a8cee73bCredential </p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">Financial Trading in Python</p>
+                                <p style="color: gray;">DataCamp</p>
+                                <p style="color: gray;">Issued Apr 2021</p>
+                                <p style="color: gray;">Credential ID: -</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/certi.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px; padding: 5px;">
+                                <p style="font-weight: bold;color: #FFF;">PH526x: Using Python for Research</p>
+                                <p style="color: gray;">HarvardX</p>
+                                <p style="color: gray;">Issued Apr 2021</p>
+                                <p style="color: gray;">Credential ID:  6681988c95e24dc7ac83c4f246a1580c</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container vertical-scroll" style="margin-top: 5x;max-width: 50%;">
+                        <h2 style="color: gray;font-size: 24px;padding-left: 0%;">Awards</h2>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/trphy.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px;">
+                                <p style="font-weight: bold;color: #FFF;">Lars Magnus Ericson Fellowship in Management </p>
+                                <p style="color: gray;">UTD</p>
+                                <p style="color: gray;">Issued Jul 2023</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/trphy.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px;">
+                                <p style="font-weight: bold;color: #FFF;">Green Champ Award 2015 </p>
+                                <p style="color: gray;">GreenLine</p>
+                                <p style="color: gray;">Issued Feb 2015</p>
+                            </div>
+                        </div>
+                        <div class="inner-container">
+                            <div class="image" style="margin-top: 30px; background-image: url('imgs/trphy.png');background-color: forestgreen; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+                            <div class="content" style="margin-top: 0px;">
+                                <p style="font-weight: bold;color: #FFF;">Green Champ Award 2014 </p>
+                                <p style="color: gray;">GreenLine</p>
+                                <p style="color: gray;">Issued Feb 2014</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tile-container-double-wide" style="margin-top:8px;">
+            <div class="tile front" style="flex-direction: column;align-items:start;justify-content: center;">
+                <p style="color :rgb(211, 211, 211);padding: 15px; font-size: 20px;">High-performing graduate with experience in the field of software development and data analytics contributing to organizational success through high-level strategy and the implementation of operational excellence. </p>
+            </div>
+            <div class="tile back" style="color: #FFF;">About</div>
+        </div>
+    </div> 
+    <div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
+        <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 0;margin-bottom: 0;opacity: 70%;">Social</h2>
+        <div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
+            <div class="tile-container">
+                <div class="tile front" style="flex-direction: column;align-items:center;justify-content: center;">
+                    <img src="imgs/git.png" style="height: 48px;width: 48px; align-items: center;">
+                </div>
+                <div class="tile back" style="color: rgb(255, 255, 255);" id="github">Github</div>
+            </div>
+            <div class="tile-container">
+                <div class="tile front" style="flex-direction: column;align-items:center;justify-content: center;">
+                    <img src="imgs/mail.png" style="height: 48px;width: 48px; align-items: center;">
+                </div>
+                <div class="tile back" style="color: rgb(255, 255, 255);" id="mailto">Mail</div>
+            </div>       
+        </div>
+        
+    </div>    
+    <div class="tile-container" style="margin-top: 112px;">
+        <div class="tile front" style="flex-direction: column;align-items:center;justify-content: center;">
+            <img src="imgs/linkd.png" style="height: 48px;width: 48px; align-items: center;">
+        </div>
+        <div class="tile back" style="color: rgb(255, 255, 255);" id="linkedin">LinkedIn</div>
+    </div>    
+</div>
+
+    <div class="container vertical-scroll" style="position: fixed; top:0;right: 0;margin: 0;" id="skillsContainer">
+        <div class="scroll-content">
+            <div class="inner-container" style="display: flex;">
+                <button id="close-button" style="position: fixed; top:30px;right: 30px;border-radius: 40px; width: 60px;height: 60px;background-color: #323233;cursor: pointer;outline: none;border:none">
+                    <img src="imgs/back.png" style="height: 60px;width: 60px;">
+                </button>
+                <div class="content" style="font-size: 48px;">All Skills</div>
+            </div>
+            <div class="inner-container" >
+            <div class="image" style="background-image: url('imgs/python.png');" onclick="callExpand('fullscreen-overlay-python','imgs/python.png','fullscreen-overlay-python')"></div> 
+            <div class="content">Python</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/csharp.png');"></div> 
+            <div class="content">C#</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/html.jpg');"></div> 
+            <div class="content">HTML</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/java.jpg');"></div> 
+            <div class="content">Java</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/js.png');"></div> 
+            <div class="content">Javascript</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/r.png');"></div> 
+            <div class="content">R</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/net.jpg');"></div> 
+            <div class="content">.NET</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/linux.png');"></div> 
+            <div class="content">Linux</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/vs.png');"></div> 
+            <div class="content">Visual Studio</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/xl.png');"></div> 
+            <div class="content">Excel</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/tableau.png');"></div> 
+            <div class="content">Tableau</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/mssql.jpg');"></div> 
+            <div class="content">MS SQL Server</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/git.jpg');"></div> 
+            <div class="content">Git</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/ml.png');"></div> 
+            <div class="content">Machine Learning</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/spring.png');"></div> 
+            <div class="content">Spring Boot</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/splunk.png');"></div> 
+            <div class="content">Splunk</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/redhat.jpg');"></div> 
+            <div class="content">Red Hat Linux</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/kali.jpg');"></div> 
+            <div class="content">Kali Linux</div></div>
+            <div class="inner-container">
+            <div class="image" style="background-image: url('imgs/oracle.png');"></div> 
+            <div class="content">Oracle SQL Developer</div></div>
+        </div>
+    
+    </div>
+
+</div>  
+<button id="expandButton" class="expand-button" style="position: fixed; top:30px;right: 30px;border-radius: 40px; border:4px solid white;width: 60px;height: 60px;background-color: #323233;cursor: pointer;display: none;">
+    <img src="imgs/menu.png" style="height: 30px;width: 30px;">
+</button>
+<div class="chat-overlay" id="chatOverlay">
+    <!-- Messages will be dynamically added here -->
+  </div>
+
+<div id="fullscreen-overlay-python" class="fullscreen-overlay">
+    <div class="inner-container" style="display: flex;">
+        <div class="image" style="margin:50px;background-image: url('imgs/back.png');background-color: #222222;"></div> 
+        <div class="content"><h1 style="margin-left: 5px;">Skill Information</h1></div>
+    </div>
+   
+    
+    <div class="inner-container" style="display: flex;">
+        <img src="" id="fullscreen-image" style="height: 183px;width: 183px;margin-left: 50px;margin-right: 10px;background-color: #FFF;">
+        <div class="content" style="display:flex;flex-direction: column;align-items:flex-start;margin-top: 0px; height: 150px;justify-content: space-evenly;">
+            <h1 style="font-size: 24;margin-bottom: 0px;margin-top: 0px;">Python</h1>
+            <span style="margin-top:0px;display: inline-block; font-size: 48px; color: #fff; background: #222222; padding: 10px 20px;">★★★★☆</span>
+            <a href="https://www.linkedin.com/in/varun-vinod-0b09601a7/" target="_blank">
+            <button style="cursor: pointer;background-color: #1f70c1;width: 120px;height: 40px;margin-left: 12px;margin-top: 0px;color: #FFF;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border: none;">Endorse</button></a>
+        </div>
+    </div>
+    <div class="vertical-scroll" style="overflow-y: auto;">
+        <h3 style="margin:50px; color: #FFF;">
+            Python is a versatile high-level programming language known for its readability and simplicity. It supports various programming paradigms, making it suitable for web development, data analysis, artificial intelligence, and more. Its extensive libraries and dynamic typing make it a popular choice for both beginners and experienced developers.    
+        </h3>
+        <h1 style="margin:25px;">Projects</h1>
+        <div class="inner-container" style="margin-left:30px;">
+            <div class="image" style="margin-left: 20px; background-image: url('imgs/Project.png');background-color: #1f70c1; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+            <div class="content" style="margin-top: 10px;">
+                <p style="font-weight: bold;color: #FFF;">WORDLE </p>
+                <p style="color: gray;">Feb 2022- Feb 2022</p>
+                <p style="color: gray;">Description: A simple implementation of the famous internet game - WORDLE using Python with added features like dynamic grid with more letters, word definitions and much more. 
+                    All this optimized to 120 lines of code</p>
+                <p style="color: gray;">Skills Used:Python (Programming Language) · Algorithms</p>
+            </div>
+        </div>
+        <div class="inner-container" style="margin-left:30px;">
+            <div class="image" style="margin-left: 20px;margin-top:10px; background-image: url('imgs/Project.png');background-color: #1f70c1; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
+            <div class="content" style="margin-top: 0px;">
+                <p style="font-weight: bold;color: #FFF;">Image Captioning Chatbot </p>
+                <p style="color: gray;">Sep 2020- Apr 2021</p>
+                <p style="color: gray;">Description: “Ask Image” is a system which automatically generates natural language descriptions based on the image provided Caption generation is a challenging artificial intelligence problem where a textual description must be generated for a given photograph. It requires both methods from computer vision to understand the content of the image and a language model from the field of natural language processing to turn the understanding of the image into words in the right order. A single end-to-end model can be defined to predict a caption, given a photo, instead of requiring sophisticated data preparation or a pipeline of specifically designed models. Conversational AI use cases are diverse. They include customer support, e-commerce, controlling IoT devices, enterprise, productivity and much more. In very simplistic terms, these use cases involve a user asking a specific question (intent) and the conversational experience (or the chatbot) responding to the question by making calls to a backend system like a CRM, Database or an API. It turns out that some of these use cases can be enriched by allowing a user to upload an image. In such cases, you would want the conversation experience to take an action based on what exactly is in that image. In this project we will develop a photo captioning deep learning model and integrate COCOS dataset, SQuAD dataset to provide rich and dynamic ML based responses to user provided image inputs.</p>
+                <p style="color: gray;">Skills Used:Machine Learning · Git · Python (Programming Language)</p>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script>
+
+    function enableFullscreen(imageUrls,Overlay) {
+      const clickableImages = document.querySelectorAll('.image');
+      const fullscreenOverlay = document.getElementById(Overlay);
+      const fullscreenImage = document.getElementById('fullscreen-image');
+
+      clickableImages.forEach((image, index) => {
+        image.addEventListener('click', () => {
+          fullscreenImage.src = imageUrls;
+          fullscreenOverlay.style.display = 'flex';
+        });
+      });
+
+      fullscreenOverlay.addEventListener('click', () => {
+        fullscreenOverlay.style.display = 'none';
+      });
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const skillsContainer = document.getElementById("skillsContainer");
+        const expandButton = document.getElementById("expandButton");
+        const closeButton = document.getElementById("close-button");
+
+        closeButton.addEventListener("click", function() {
+            
+            skillsContainer.classList.add("slide-out");
+            skillsContainer.classList.remove("slide-in");
+            skillsContainer.style.display = "none";
+            expandButton.style.display = "block";
+        });
+
+        expandButton.addEventListener("click", function() {
+            skillsContainer.classList.add("slide-in"); // Add the slide-in class
+            skillsContainer.classList.remove("slide-out");
+            skillsContainer.style.display = "block";
+            expandButton.style.display = "none";
+        });
+        window.addEventListener("load",function() {
+            if (window.innerWidth <= 0.7 * window.screen.width) {
+                skillsContainer.classList.add("slide-out");
+                skillsContainer.style.display = "none";
+                expandButton.style.display = "block";
+
+            } else {
+                skillsContainer.classList.remove("slide-out");
+                skillsContainer.classList.add("slide-in");
+                skillsContainer.style.display = "block";
+                expandButton.style.display = "none";
+            }
+        });
+
+        window.addEventListener("resize", function() {
+            if (window.innerWidth <= 0.7 * window.screen.width) {
+                skillsContainer.classList.add("slide-out");
+                skillsContainer.style.display = "none";
+                expandButton.style.display = "block";
+
+            } else {
+                skillsContainer.classList.remove("slide-out");
+                skillsContainer.classList.add("slide-in");
+                skillsContainer.style.display = "block";
+                expandButton.style.display = "none";
+            }
+        });
+    });
+
+
+
+    function displayRandomMessages() {
+        console.log("displayRandomMessages");
+        const chatOverlay = document.getElementById("chatOverlay");
+        const message = 'Hey there! Welcome to my Portfolio Website! Hover/Tap on the tiles to see more information about me.'
+        const imageurl = 'imgs/msg.png'
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message");
+        messageElement.innerHTML = `<img src="${imageurl}" style='margin:20px'>${message}`;
+        // messageElement.textContent = message;
+        // chatOverlay.appendChild(messageElement);
+
+        setTimeout(() => {
+            messageElement.classList.add("show");
+        }, 100);
+
+        setTimeout(() => {
+            messageElement.classList.add("destroy");
+        }, 8000);
+        // Set a timeout to remove the message after the animation
+        
+        setTimeout(() => {
+            chatOverlay.removeChild(messageElement);
+        }, 9000); // Adjust the delay as needed
+
+        chatOverlay.appendChild(messageElement);
+    }
+
+       
+
+    function closingAnimation(imageId,tileId){
+        const image = document.getElementById(imageId);
+        const tile = document.getElementById(tileId);
+
+        console.log(image);
+        console.log(tile);
+
+        image.addEventListener('click',()=>{
+            //const tile = document.querySelector('.tile');
+            tile.classList.add('animation-removed');
+
+            setTimeout(()=>{
+                tile.classList.remove('flipped', 'expanded','animation-removed');
+            },1000);
+        });
+    }
+    
+    function expandTile(tile) {
+        tile.classList.toggle('flipped');
+        const nameBack = hiddenDiv.querySelector(".name-back");
+        const contentBack = hiddenDiv.querySelector(".content-back");
+        const expandedDiv = tile.querySelector('.expanded');
+
+        tile.addEventListener("click", function() {
+            // Toggle visibility of name and content backs
+            nameBack.style.display = "none";
+            contentBack.style.display = "block";
+            
+            // Add your logic to populate the content of the content-back div
+            
+            // You can also add a class to the expanded tile for styling purposes
+            tile.classList.add("expanded");
+        });
+        if (tile.classList.contains('flipped')) {
+            expandedDiv.style.display = 'block';
+            document.body.classList.add('expanded');
+        
+        } 
+        
+        else {
+            expandedDiv.style.display = 'none';
+            document.body.classList.remove('expanded');
+        }
+    }
+
+    function callExpand(idd,img,overlay) {
+            const div = document.getElementById(idd);
+            enableFullscreen(img,overlay);
+            expandTile(div);
+            
+        }
+
+    // function closeExpandedTile() {
+    //     const tile = document.querySelector('.tile');
+    //     if (tile.classList.contains('flipped')) {
+    //         //tile.classList.remove('flipped');
+    //         tile.style.animation = "AntiflipAnimation 1s"
+    //         document.body.classList.remove('expanded');
+    //     }
+        
+    // }
+    
+
+
+    function flipTile(tile) {
+            tile.classList.toggle('flipped');
+        }
+    function expandTile(tile) {
+            tile.classList.toggle('expanded');
+        }
+
+    function toggleHiddenDiv(divNumber) {
+    const hiddenDiv = document.getElementById(`hiddenDiv${divNumber}`);
+    hiddenDiv.style.display = hiddenDiv.style.display === 'none' ? 'block' : 'none';
+    }
+   
+   function LargeTileAnimation() {
+        const tiles = document.querySelectorAll('.tile-container-double-wide');
+        function animateTiles(tile) {
+                tile.querySelector('.tile.front').style.transform = 'translateY(-20%)';
+                tile.querySelector('.tile.back').style.transform = 'translateY(0%)';
+
+                // Reset the tile after 5 seconds
+                setTimeout(() => {
+                    tile.querySelector('.tile.front').style.transform = 'translateY(0%)';
+                    tile.querySelector('.tile.back').style.transform = 'translateY(100%)';
+                }, 5000);
+        }
+        tiles.forEach((tile, index) => {
+            animateTiles(tile); // Initial animation for each tile
+
+            // Repeat the animation every 5 seconds using setInterval
+            setInterval(() => {
+                animateTiles(tile);
+            }, 10000); // 10000ms (10 seconds) to include both the animation and the reset
+        });
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const clickableDiv = document.getElementById("linkedin");
+        
+        const linkUrl = "https://www.linkedin.com/in/varun-vinod-0b09601a7/";
+        
+        clickableDiv.addEventListener("click", function() {
+            window.location.href = linkUrl;
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        const clickableDiv = document.getElementById("github");
+        
+        const linkUrl = "https://github.com/knightlyf";
+        
+        clickableDiv.addEventListener("click", function() {
+            window.location.href = linkUrl;
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+    const clickableDiv = document.getElementById("mailto");
+    
+    // Replace the email address with the actual recipient's email address
+    const emailAddress = "Varun.Vinod@utdallas.edu";
+    
+    clickableDiv.addEventListener("click", function() {
+        window.location.href = `mailto:${emailAddress}`;
+    });
+});
+
+
+
+//     function animateTiles(tile) {
+//         tile.querySelector('.tile.front').style.transform = 'translateY(-100%)';
+//         tile.querySelector('.tile.back').style.transform = 'translateY(0%)';
+
+//         // Reset the tile after the animation duration
+//         setTimeout(() => {
+//             tile.querySelector('.tile.front').style.transform = 'translateY(0%)';
+//             tile.querySelector('.tile.back').style.transform = 'translateY(100%)';
+//         }, animationDuration);
+//     }
+
+//     function startAnimation() {
+//         tiles.forEach((tile, index) => {
+//             animateTiles(tile); // Initial animation for each tile
+
+//             // Repeat the animation after the animation interval
+//             intervalId = setInterval(() => {
+//                 animateTiles(tile);
+//             }, animationInterval);
+//         });
+//     }
+
+//     function stopAnimation() {
+//         clearInterval(intervalId);
+//     }
+
+//     tiles.forEach((tile, index) => {
+//         tile.addEventListener('mouseenter', stopAnimation);
+//         tile.addEventListener('mouseleave', startAnimation);
+//     });
+
+//     // Start the animation initially
+//     startAnimation();
+// }
+    function handleVisibility() {
+        const hideableContent = document.querySelectorAll('.hide-on-small-screen');
+        const screenWidthThreshold = 0.6 * window.screen.width;
+        hideableContent.forEach(div => {
+            if (window.innerWidth < screenWidthThreshold) {
+                //div.style.display = 'none';
+                div.classList.add('hide-slide-out');
+            } else {
+                // div.style.display = 'block';
+                div.classList.remove('hide-slide-out');
+            }
+        });
+    }
+
+    // Initial check and attach resize event
+    handleVisibility();
+    window.addEventListener('resize', handleVisibility);
+
+
+    
+    window.addEventListener('load', LargeTileAnimation);
+    //window.addEventListener('load', SmallTileAnimation);
+    // window.onload = displayRandomMessages
+    document.addEventListener("DOMContentLoaded", function() {
+        displayRandomMessages();
+    });
+
+    toggleHiddenDiv(1);
+    toggleHiddenDiv(2);
+    toggleHiddenDiv(3);
+    toggleHiddenDiv(4);
+
+</script>
+</body>
+</html>
