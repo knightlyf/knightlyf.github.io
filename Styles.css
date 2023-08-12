@@ -70,12 +70,14 @@ body {
 
         .tile.back {
             z-index: 0;
+            transform: translateZ(-100%);
             transform: translateY(100%);
             padding-left: 10px;
             padding-bottom: 25px;
             align-items: flex-end; 
             justify-content: flex-start;
             cursor: pointer;
+            
         }
         .tile.modal{
             z-index: 0;
@@ -444,7 +446,7 @@ body {
                 transform: translateX(0);
             }
             100% {
-                transform: translateX(100%);
+                transform: translateX(200%);
             }
         }
         

@@ -3,6 +3,7 @@
 <head>
     <title>Varun Vinod - Porfolio Website</title>
     <link rel="stylesheet" href="Styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -316,7 +317,10 @@
     
         <div class="tile back" style="background-color: rgb(255, 196, 0);">
         <div class="container vertical-scroll" style="height: 100%;width: 100%;margin: 0%;padding: 25px;">
-            <h1>Projects</h1>
+            <div class="inner-container" style="display: flex;">
+                <div class="image" style="margin-top:50px;background-image: url('imgs/back.png');background-color: #222222;"></div> 
+                <div class="content"><h1 style="margin-left: 5px;">Projects</h1></div>
+            </div>
             <div class="inner-container">
                 <div class="image" style="margin-top: 30px; background-image: url('imgs/Project.png');background-color: rgb(255, 196, 0);; padding: 5px;max-width: 80%;max-height: 80%;"></div> 
                 <div class="content" style="margin-top: 0px;">
@@ -377,7 +381,14 @@
         <div class="tile back" style="background-color: forestgreen;display: block;" id="back1" onclick="showModal(back1,modal1)"></div>
         <div class="tile modal" style="background-color: forestgreen;display: block;" id="modal1">
             <div class="container vertical-scroll" style="height: 100%;width: 100%;margin: 0%;padding: 25px;;">
-                <h1 style="font-size: 48px;">Awards and Certifications</h1>
+                <!-- <div class="image" style="margin:5px;background-image: url('imgs/back.png');background-color: #222222;display: flex;">
+                    <h1 style="font-size: 48px;">Awards and Certifications</h1>
+                </div>  -->
+                <div class="inner-container" style="display: flex;">
+                    <div class="image" style="margin-top:50px;background-image: url('imgs/back.png');background-color: #222222;"></div> 
+                    <div class="content"><h1 style="margin-left: 5px;">Awards and Certifications</h1></div>
+                </div>
+                
                 <div style="display:flex;align-items: flex-start;">
                     <div class="container vertical-scroll" style="margin-top: 5x;max-width: 50%;">
                         <h2 style="color: gray;font-size: 24px;padding-left: 0%;">Certifications</h2>
@@ -496,7 +507,7 @@
         </div>
         <div class="tile-container-double-wide" style="margin-top:8px;">
             <div class="tile front" style="flex-direction: column;align-items:start;justify-content: center;">
-                <p style="color :rgb(211, 211, 211);padding: 15px; font-size: 20px;">High-performing graduate with experience in the field of software development and data analytics contributing to organizational success through high-level strategy and the implementation of operational excellence. </p>
+                <p style="color :rgb(211, 211, 211);padding: 15px; font-size: 20px;">"High-performing graduate with experience in the field of software development and data analytics contributing to organizational success through high-level strategy and the implementation of operational excellence. "</p>
             </div>
             <div class="tile back" style="color: #FFF;">About</div>
         </div>
@@ -589,14 +600,6 @@
             <div class="inner-container">
             <div class="image" style="background-image: url('imgs/vs.png');"></div> 
             <div class="content">Visual Studio</div></div>
-            
-            
-            
-            
-            
-            
-            
-            
         </div>
     
     </div>
