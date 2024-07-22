@@ -5,6 +5,7 @@ body {
             justify-content: flex-start;
             align-items: flex-start;
             height: 100vh;
+            width: 100vw;
             background-color: #222222; 
             background-image: url(imgs/background.jpg);
             
@@ -44,7 +45,7 @@ body {
             margin: 10px;
             margin-top: 20px;
             perspective: 800px;
-        }
+        } 
 
 
         .tile {
@@ -79,6 +80,28 @@ body {
             cursor: pointer;
             
         }
+        .tile.back.name-back {
+            display: block; /* Initially visible */
+            padding-left: 10px;
+            padding-bottom: 25px;
+            align-items: flex-end; 
+            justify-content: flex-start;
+            cursor: pointer;
+        }
+        .tile.back.content-back {
+            display: none; /* Initially hidden */
+            padding-left: 10px;
+            padding-bottom: 25px;
+            align-items: flex-end; 
+            justify-content: flex-start;
+            cursor: pointer; 
+        }
+        .tile.expanded .back.content-back {
+            display: block; /* Display when the tile is expanded */
+        }
+        .tile.expanded .back.name-back {
+            display: none; /* Display when the tile is expanded */
+        }
         .tile.modal{
             z-index: 0;
             transform: translateY(100%);
@@ -96,7 +119,6 @@ body {
         .tile-container:hover .tile.back {
             transform: translateY(0%);
         }
-        
 
         .tile-container-large:hover .tile.front {
             transform: translateY(-100%);
@@ -105,7 +127,7 @@ body {
         .tile-container-large:hover .tile.back {
             transform: translateY(0%);
             backface-visibility: hidden;
-        } 
+        }  
         .tile-container-large:hover .tile.modal {
             transform: translateY(0%);
             backface-visibility: hidden;
@@ -120,6 +142,15 @@ body {
 
         .tile.flipped {
             transform: rotateY(180deg);
+        }
+
+        .tile-expand {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+            justify-content: center;
+            align-items: center;
         }
 
         h1,h2,h4,h5{
@@ -161,6 +192,7 @@ body {
             z-index: 2;
             position: absolute;
         }
+        
         .container {
             width: 400px;
             height: auto;
@@ -204,10 +236,11 @@ body {
 
         .scroll-content {
             width: 300px; 
-            height: 960px; 
+            height: 100vh; 
             padding: 10px;
             display: flex;
             flex-direction: column;
+            
         }
 
         /* Enable vertical scroll */
@@ -216,6 +249,9 @@ body {
             
         }
         .container.vertical-scroll::-webkit-scrollbar {
+            display: none; 
+        }
+        body::-webkit-scrollbar {
             display: none; 
         }
         

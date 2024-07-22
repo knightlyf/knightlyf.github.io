@@ -9,16 +9,16 @@
 
 <div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
     <h2 style="font-size: 36px;font-weight: 400;padding-bottom: 0;margin-bottom: 0;opacity: 70%;">Me</h2>
-    <div class="tile-container-double-wide">
+    <div class="tile-container-double-wide metro-tile">
         <div class="tile front">
             <img src="imgs/profile.jpg" style="height: 100%;width: 100%;"></div>
         <div class="tile back" >Varun Vinod</div>
     </div>
-    <div class="tile-container-double-wide">
+    <div class="tile-container-double-wide metro-tile">
         <div class="tile front" style="flex-direction: column;align-items:start;justify-content: center;">
             
-            <p style="color :rgb(211, 211, 211);padding: 15px;padding-bottom: 0px; font-size: 20px;font-weight: bold;">Governance, Risk Management and Compliance Intern @ Hexaware</p>  
-            <p style="color :rgb(211, 211, 211);padding: 15px; padding-top: 0px; font-size: 20px;">Pursuing Information Technology Management @ University of Texas at Dallas</p>
+            <p style="color :rgb(211, 211, 211);padding: 15px;padding-bottom: 0px; font-size: 20px;font-weight: bold;">Full Stack <br>Software Engineer<br>@ Hexaware</p>  
+            <p style="color :rgb(211, 211, 211);padding: 15px; padding-top: 0px; font-size: 20px;">Graduated from the University of Texas at Dallas with a Masters in Information Technology Management  </p>
         </div>
         <div class="tile back">About Me</div>
     </div>
@@ -92,7 +92,7 @@
 
 <div class="hidden-div tile-container" id="hiddenDiv2" onclick="expandTile(this)">
     
-    <div class=" tile front" style="background-color: #FFF;"><img src="imgs/IBM.png" style="height: 32px;width: 64px; align-items: center;"></div>
+    <div class="tile front" style="background-color: #FFF;"><img src="imgs/IBM.png" style="height: 32px;width: 64px; align-items: center;"></div>
     <div class=" tile back" style="background-color: #FFF;color: black;">
         <div style="display: flex;flex-direction: column; max-width: 500px;" class="hide-on-small-screen">
             <img src="imgs/backB.png" style="position: fixed;top: 50px;left:50px;" >
@@ -168,7 +168,7 @@
 <div class="hidden-div tile-container" id="hiddenDiv3" onclick="expandTile(this)">
     
     <div class=" tile front" style="background-color: #e87602;" ><img src="imgs/UTD.png" style="height: 50px;width:80px; align-items: center;"></div>
-    <div class=" tile back name-back" style="background-color: #e87602;color: rgb(255, 255, 255);" >UTD</div>
+    <div class=" tile-expand" style="background-color: #e87602;color: rgb(255, 255, 255);" >UTD</div>
     <div class=" tile back content-back" style="background-color: #e87602;color: rgb(255, 255, 255);" >
         <div style="display: flex;flex-direction: column;max-width: 500px;" class="hide-on-small-screen">
             <img src="imgs/back.png" style="position: fixed;top: 50px;left:50px;" id='backbutton2' onclick="closingAnimation('backbutton1','hiddenDiv3')">
@@ -236,7 +236,6 @@
             <img src="imgs/pce.png" style="width:50%;height: 20%; padding: 55px;">
             <h1>Pillai College of Engineering (Mumbai University)</h1>
         </div>
-           
             <div class="container vertical-scroll" style="height: 100%;width: 50%;margin: 0%;padding: 25px;">
                 <h2>Degrees</h2>
                 <div class="inner-container">
@@ -509,7 +508,7 @@
             <div class="tile front" style="flex-direction: column;align-items:start;justify-content: center;">
                 <p style="color :rgb(211, 211, 211);padding: 15px; font-size: 20px;">"High-performing graduate with experience in the field of software development and data analytics contributing to organizational success through high-level strategy and the implementation of operational excellence. "</p>
             </div>
-            <div class="tile back" style="color: #FFF;">About</div>
+            <div class="tile back" style="color: #FFF;">Summary</div>
         </div>
     </div> 
     <div style="flex-direction: column; align-items: flex-start; flex-wrap: wrap;">
@@ -657,297 +656,16 @@
     
 </div>
 
+<script src="scripts.js"></script>
 <script>
-
-    function enableFullscreen(imageUrls,Overlay) {
-      const clickableImages = document.querySelectorAll('.image2');
-      const fullscreenOverlay = document.getElementById(Overlay);
-      const fullscreenImage = document.getElementById('fullscreen-image');
-
-      clickableImages.forEach((image, index) => {
-        image.addEventListener('click', () => {
-            fullscreenImage.src = imageUrls;
-            fullscreenOverlay.style.display = 'flex';
-            //animate to slide in
-            fullscreenOverlay.classList.add('slide-in');
-        });
-      });
-
-      fullscreenOverlay.addEventListener('click', () => {
-        fullscreenOverlay.style.display = 'none';
-        fullscreenOverlay.classList.remove('slide-in');
-      });
-    }
-
-    document.addEventListener("DOMContentLoaded", function() {
-        const skillsContainer = document.getElementById("skillsContainer");
-        const expandButton = document.getElementById("expandButton");
-        const closeButton = document.getElementById("close-button");
-
-        closeButton.addEventListener("click", function() {
-            
-            skillsContainer.classList.add("slide-out");
-            skillsContainer.classList.remove("slide-in");
-            skillsContainer.style.display = "none";
-            expandButton.style.display = "block";
-        });
-
-        expandButton.addEventListener("click", function() {
-            skillsContainer.classList.add("slide-in"); // Add the slide-in class
-            skillsContainer.classList.remove("slide-out");
-            skillsContainer.style.display = "block";
-            expandButton.style.display = "none";
-        });
-        window.addEventListener("load",function() {
-            if (window.innerWidth <= 0.7 * window.screen.width) {
-                skillsContainer.classList.add("slide-out");
-                skillsContainer.style.display = "none";
-                expandButton.style.display = "block";
-
-            } else {
-                skillsContainer.classList.remove("slide-out");
-                skillsContainer.classList.add("slide-in");
-                skillsContainer.style.display = "block";
-                expandButton.style.display = "none";
-            }
-        });
-
-        window.addEventListener("resize", function() {
-            if (window.innerWidth <= 0.7 * window.screen.width) {
-                skillsContainer.classList.add("slide-out");
-                skillsContainer.style.display = "none";
-                expandButton.style.display = "block";
-
-            } else {
-                skillsContainer.classList.remove("slide-out");
-                skillsContainer.classList.add("slide-in");
-                skillsContainer.style.display = "block";
-                expandButton.style.display = "none";
-            }
-        });
-    });
-
-
-
-    function displayRandomMessages() {
-        console.log("displayRandomMessages");
-        const chatOverlay = document.getElementById("chatOverlay");
-        const message = 'Hey there! Welcome to my Portfolio Website! Hover/Tap on the tiles to see more information about me.'
-        const imageurl = 'imgs/msg.png'
-        const messageElement = document.createElement("div");
-        messageElement.classList.add("message");
-        messageElement.innerHTML = `<img src="${imageurl}" style='margin:20px'>${message}`;
-        // messageElement.textContent = message;
-        // chatOverlay.appendChild(messageElement);
-
-        setTimeout(() => {
-            messageElement.classList.add("show");
-        }, 100);
-
-        setTimeout(() => {
-            messageElement.classList.add("destroy");
-        }, 8000);
-        // Set a timeout to remove the message after the animation
-        
-        setTimeout(() => {
-            chatOverlay.removeChild(messageElement);
-        }, 9000); // Adjust the delay as needed
-
-        chatOverlay.appendChild(messageElement);
-    }
-
-       
-
-    function closingAnimation(imageId,tileId){
-        const image = document.getElementById(imageId);
-        const tile = document.getElementById(tileId);
-
-        console.log(image);
-        console.log(tile);
-
-        image.addEventListener('click',()=>{
-            //const tile = document.querySelector('.tile');
-            tile.classList.add('animation-removed');
-
-            setTimeout(()=>{
-                tile.classList.remove('flipped', 'expanded','animation-removed');
-            },1000);
-        });
-    }
-    
-    function expandTile(tile) {
-        tile.classList.toggle('flipped');
-        const nameBack = hiddenDiv.querySelector(".name-back");
-        const contentBack = hiddenDiv.querySelector(".content-back");
-        const expandedDiv = tile.querySelector('.expanded');
-
-        tile.addEventListener("click", function() {
-            // Toggle visibility of name and content backs
-            nameBack.style.display = "none";
-            contentBack.style.display = "block";
-            
-            // Add logic to populate the content of the content-back div
-            
-            // You can also add a class to the expanded tile for styling purposes
-            tile.classList.add("expanded");
-        });
-        if (tile.classList.contains('flipped')) {
-            expandedDiv.style.display = 'block';
-            document.body.classList.add('expanded');
-        
-        } 
-        
-        else {
-            expandedDiv.style.display = 'none';
-            document.body.classList.remove('expanded');
-        }
-    }
-
-    function callExpand(idd,img,overlay) {
-            const div = document.getElementById(idd);
-            enableFullscreen(img,overlay);
-            expandTile(div);
-            
-        }
-
-    // function closeExpandedTile() {
-    //     const tile = document.querySelector('.tile');
-    //     if (tile.classList.contains('flipped')) {
-    //         //tile.classList.remove('flipped');
-    //         tile.style.animation = "AntiflipAnimation 1s"
-    //         document.body.classList.remove('expanded');
-    //     }
-        
-    // }
-    
-
-
-    function flipTile(tile) {
-            tile.classList.toggle('flipped');
-        }
-    function expandTile(tile) {
-            tile.classList.toggle('expanded');
-        }
-
-    function toggleHiddenDiv(divNumber) {
-    const hiddenDiv = document.getElementById(`hiddenDiv${divNumber}`);
-    hiddenDiv.style.display = hiddenDiv.style.display === 'none' ? 'block' : 'none';
-    }
-   
-   function LargeTileAnimation() {
-        const tiles = document.querySelectorAll('.tile-container-double-wide');
-        function animateTiles(tile) {
-                tile.querySelector('.tile.front').style.transform = 'translateY(-20%)';
-                tile.querySelector('.tile.back').style.transform = 'translateY(0%)';
-
-                // Reset the tile after 5 seconds
-                setTimeout(() => {
-                    tile.querySelector('.tile.front').style.transform = 'translateY(0%)';
-                    tile.querySelector('.tile.back').style.transform = 'translateY(100%)';
-                }, 5000);
-        }
-        tiles.forEach((tile, index) => {
-            animateTiles(tile); // Initial animation for each tile
-
-            // Repeat the animation every 5 seconds using setInterval
-            setInterval(() => {
-                animateTiles(tile);
-            }, 10000); // 10000ms (10 seconds) to include both the animation and the reset
-        });
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        const clickableDiv = document.getElementById("linkedin");
-        
-        const linkUrl = "https://www.linkedin.com/in/varun-vinod-0b09601a7/";
-        
-        clickableDiv.addEventListener("click", function() {
-            window.location.href = linkUrl;
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-        const clickableDiv = document.getElementById("github");
-        
-        const linkUrl = "https://github.com/knightlyf";
-        
-        clickableDiv.addEventListener("click", function() {
-            window.location.href = linkUrl;
-        });
-    });
-    document.addEventListener("DOMContentLoaded", function() {
-    const clickableDiv = document.getElementById("mailto");
-    
-    // Replace the email address with the actual recipient's email address
-    const emailAddress = "Varun.Vinod@utdallas.edu";
-    
-    clickableDiv.addEventListener("click", function() {
-        window.location.href = `mailto:${emailAddress}`;
-    });
-});
-
-
-
-//     function animateTiles(tile) {
-//         tile.querySelector('.tile.front').style.transform = 'translateY(-100%)';
-//         tile.querySelector('.tile.back').style.transform = 'translateY(0%)';
-
-//         // Reset the tile after the animation duration
-//         setTimeout(() => {
-//             tile.querySelector('.tile.front').style.transform = 'translateY(0%)';
-//             tile.querySelector('.tile.back').style.transform = 'translateY(100%)';
-//         }, animationDuration);
-//     }
-
-//     function startAnimation() {
-//         tiles.forEach((tile, index) => {
-//             animateTiles(tile); // Initial animation for each tile
-
-//             // Repeat the animation after the animation interval
-//             intervalId = setInterval(() => {
-//                 animateTiles(tile);
-//             }, animationInterval);
-//         });
-//     }
-
-//     function stopAnimation() {
-//         clearInterval(intervalId);
-//     }
-
-//     tiles.forEach((tile, index) => {
-//         tile.addEventListener('mouseenter', stopAnimation);
-//         tile.addEventListener('mouseleave', startAnimation);
-//     });
-
-//     // Start the animation initially
-//     startAnimation();
-// }
-    function handleVisibility() {
-        const hideableContent = document.querySelectorAll('.hide-on-small-screen');
-        const screenWidthThreshold = 0.6 * window.screen.width;
-        hideableContent.forEach(div => {
-            if (window.innerWidth < screenWidthThreshold) {
-                //div.style.display = 'none';
-                div.classList.add('hide-slide-out');
-            } else {
-                // div.style.display = 'block';
-                div.classList.remove('hide-slide-out');
-            }
-        });
-    }
 
     // Initial check and attach resize event
     handleVisibility();
     window.addEventListener('resize', handleVisibility);
 
-
-    
     window.addEventListener('load', LargeTileAnimation);
     //window.addEventListener('load', SmallTileAnimation);
-    // window.onload = displayRandomMessages
-    document.addEventListener("DOMContentLoaded", function() {
-        displayRandomMessages();
-    });
-
+    
     toggleHiddenDiv(1);
     toggleHiddenDiv(2);
     toggleHiddenDiv(3);
