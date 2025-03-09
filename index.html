@@ -14,7 +14,7 @@
   <script>
     function setViewport() {
       let viewport = document.querySelector("meta[name=viewport]");
-      if (window.innerWidth <= 768) { // Adjusts for mobile screens
+      if (window.innerWidth <= 800) { // Adjusts for mobile screens
         viewport.setAttribute("content", "width=device-width, initial-scale=0.66");
       } else {
         viewport.setAttribute("content", "width=device-width, initial-scale=1.0");
